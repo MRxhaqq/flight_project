@@ -1,0 +1,148 @@
+.main-body {
+    max-width: 90rem;
+    margin: .5rem auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+
+    @include respond(tab-port) {
+        display: block;
+        border-radius: 0;
+        margin: 1rem auto;
+        
+    }
+
+    @include respond(tab-port-1) {
+        display: block;
+        border-radius: 0;
+        margin: 0 auto;
+        
+    }
+    
+    
+
+    &__left {
+        background-image: url(../../img/plane.jpg);
+        background-size: cover;
+        background-position: center;
+        flex: 0 0 55%;
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 2rem 4.5rem;
+
+    }
+
+    &__left-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__left-item {
+        list-style: none;
+    }
+
+    &__left-list {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        
+    }
+
+    &__left-paragraph {
+        margin-top: 10rem;
+        font-size: 3.5rem;
+        font-weight: 700;
+        max-width: 30rem;
+        line-height: 1.2;
+
+    }
+
+    &__left-span {
+        margin-top: 2rem;
+        display: block;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    &__right {
+        background-color: #fff;
+        flex: 1;
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        
+    }
+
+    &__right-nav {
+        margin-left: 20rem;
+        text-decoration: none;
+        color: #000;
+
+        @include respond(tab-port-1) {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            margin-left: 0;
+        }
+    }
+
+    &__right-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__right-form-item {
+        list-style: none;
+    }
+
+    &__right-form-list {
+        margin-bottom: 2rem;
+    }
+
+    &__right-label {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    &__right-input {
+        border: none;
+        background-color: var(--color-secondary-grey);
+        padding: 1rem 2rem;
+        width: 90%;
+
+        @include respond(tab-port-1) {
+            width: 130%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__right-button-nav {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: blue;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        width: 90%;
+
+        @include respond(tab-port-1) {
+            width: 130%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "flight_project",
+  "version": "1.0.0",
+  "description": "Landing Page of Flight Registration",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/sytle.css -w"
+  },
+  "author": "Shuaib Abdulhaqq Omeiza",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
